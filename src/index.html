@@ -10,9 +10,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
   </head>
   <body>
+
+    <div class="navbar-menu">
+
+    </div>
+
+    <div class="navbar-burger">
+      <button> &#x1F354; </button>
+
+    </div>
+
     <div class="main">
       <div class="emoji mb-6">💣🤯💥</div>
       <button class="button">Boom?</button>
     </div>
+
+    <style>
+      .navbar-menu{
+        display: block;
+        width: 250px;
+        height: 250px;
+        background-color: #bada55;
+      }
+
+      .navbar-burger {
+        display: none;
+        width: 250px;
+        height: 250px;
+      }
+
+      @media screen and (max-width: 600px) {
+         .navbar-burger{
+           display: block;
+         } 
+
+         .navbar-menu{
+           display: none;
+         }
+      };
+    </style>
   </body>
 </html>
